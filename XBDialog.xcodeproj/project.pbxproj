@@ -12,11 +12,11 @@
 		33A605781EE7EE400023A3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A605761EE7EE400023A3D2 /* Main.storyboard */; };
 		33A6057A1EE7EE400023A3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A605791EE7EE400023A3D2 /* Assets.xcassets */; };
 		33A6057D1EE7EE400023A3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A6057B1EE7EE400023A3D2 /* LaunchScreen.storyboard */; };
-		33A605861EE7EECA0023A3D2 /* DialogTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605851EE7EECA0023A3D2 /* DialogTransition.swift */; };
-		33A605881EE7EEFC0023A3D2 /* DialogConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605871EE7EEFC0023A3D2 /* DialogConfig.swift */; };
-		33A6058A1EE7EF210023A3D2 /* DialogPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605891EE7EF210023A3D2 /* DialogPresentationController.swift */; };
-		33A6058C1EE7EF8C0023A3D2 /* DialogPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6058B1EE7EF8C0023A3D2 /* DialogPresentAnimator.swift */; };
-		33A6058E1EE7F0010023A3D2 /* UIViewController+Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6058D1EE7F0010023A3D2 /* UIViewController+Dialog.swift */; };
+		33A605951EE7F3310023A3D2 /* DialogConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605901EE7F3310023A3D2 /* DialogConfig.swift */; };
+		33A605961EE7F3310023A3D2 /* DialogPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605911EE7F3310023A3D2 /* DialogPresentAnimator.swift */; };
+		33A605971EE7F3310023A3D2 /* DialogPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605921EE7F3310023A3D2 /* DialogPresentationController.swift */; };
+		33A605981EE7F3310023A3D2 /* DialogTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605931EE7F3310023A3D2 /* DialogTransition.swift */; };
+		33A605991EE7F3310023A3D2 /* UIViewController+Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605941EE7F3310023A3D2 /* UIViewController+Dialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +27,11 @@
 		33A605791EE7EE400023A3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A6057C1EE7EE400023A3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A6057E1EE7EE400023A3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A605851EE7EECA0023A3D2 /* DialogTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogTransition.swift; sourceTree = "<group>"; };
-		33A605871EE7EEFC0023A3D2 /* DialogConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogConfig.swift; sourceTree = "<group>"; };
-		33A605891EE7EF210023A3D2 /* DialogPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogPresentationController.swift; sourceTree = "<group>"; };
-		33A6058B1EE7EF8C0023A3D2 /* DialogPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogPresentAnimator.swift; sourceTree = "<group>"; };
-		33A6058D1EE7F0010023A3D2 /* UIViewController+Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dialog.swift"; sourceTree = "<group>"; };
+		33A605901EE7F3310023A3D2 /* DialogConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogConfig.swift; sourceTree = "<group>"; };
+		33A605911EE7F3310023A3D2 /* DialogPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogPresentAnimator.swift; sourceTree = "<group>"; };
+		33A605921EE7F3310023A3D2 /* DialogPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogPresentationController.swift; sourceTree = "<group>"; };
+		33A605931EE7F3310023A3D2 /* DialogTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogTransition.swift; sourceTree = "<group>"; };
+		33A605941EE7F3310023A3D2 /* UIViewController+Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dialog.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 		33A605711EE7EE400023A3D2 /* XBDialog */ = {
 			isa = PBXGroup;
 			children = (
-				33A605841EE7EEB10023A3D2 /* Class */,
+				33A6058F1EE7F3310023A3D2 /* Classes */,
 				33A605721EE7EE400023A3D2 /* AppDelegate.swift */,
 				33A605741EE7EE400023A3D2 /* ViewController.swift */,
 				33A605761EE7EE400023A3D2 /* Main.storyboard */,
@@ -75,16 +75,16 @@
 			path = XBDialog;
 			sourceTree = "<group>";
 		};
-		33A605841EE7EEB10023A3D2 /* Class */ = {
+		33A6058F1EE7F3310023A3D2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				33A605871EE7EEFC0023A3D2 /* DialogConfig.swift */,
-				33A605851EE7EECA0023A3D2 /* DialogTransition.swift */,
-				33A6058B1EE7EF8C0023A3D2 /* DialogPresentAnimator.swift */,
-				33A605891EE7EF210023A3D2 /* DialogPresentationController.swift */,
-				33A6058D1EE7F0010023A3D2 /* UIViewController+Dialog.swift */,
+				33A605901EE7F3310023A3D2 /* DialogConfig.swift */,
+				33A605911EE7F3310023A3D2 /* DialogPresentAnimator.swift */,
+				33A605921EE7F3310023A3D2 /* DialogPresentationController.swift */,
+				33A605931EE7F3310023A3D2 /* DialogTransition.swift */,
+				33A605941EE7F3310023A3D2 /* UIViewController+Dialog.swift */,
 			);
-			path = Class;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,12 +161,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A605751EE7EE400023A3D2 /* ViewController.swift in Sources */,
-				33A6058A1EE7EF210023A3D2 /* DialogPresentationController.swift in Sources */,
-				33A6058C1EE7EF8C0023A3D2 /* DialogPresentAnimator.swift in Sources */,
-				33A605861EE7EECA0023A3D2 /* DialogTransition.swift in Sources */,
-				33A6058E1EE7F0010023A3D2 /* UIViewController+Dialog.swift in Sources */,
+				33A605971EE7F3310023A3D2 /* DialogPresentationController.swift in Sources */,
 				33A605731EE7EE400023A3D2 /* AppDelegate.swift in Sources */,
-				33A605881EE7EEFC0023A3D2 /* DialogConfig.swift in Sources */,
+				33A605961EE7F3310023A3D2 /* DialogPresentAnimator.swift in Sources */,
+				33A605991EE7F3310023A3D2 /* UIViewController+Dialog.swift in Sources */,
+				33A605981EE7F3310023A3D2 /* DialogTransition.swift in Sources */,
+				33A605951EE7F3310023A3D2 /* DialogConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +293,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BU9U9E5458;
 				INFOPLIST_FILE = XBDialog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.XBDialog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BU9U9E5458;
 				INFOPLIST_FILE = XBDialog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.XBDialog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
