@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         self.view.addSubview(self.button)
     }
     
-    public func pre() {
+    @objc public func pre() {
         
         let vc = DemoViewController()
         vc.xb.present.dialog {
@@ -61,13 +61,13 @@ class DemoViewController: UIViewController {
         self.view.addSubview(self.button)
     }
     
-    public func dis() {
+    @objc public func dis() {
         
         self.dismiss(animated: true, completion: nil)
     }
     
     // 手势点击
-    public func tapGestureRecognizer() {
+    @objc public func tapGestureRecognizer() {
         debugPrint("点击了背景")
     }
     
