@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 /// 弹出框配置
 public class DialogConfig: NSObject  {
     
