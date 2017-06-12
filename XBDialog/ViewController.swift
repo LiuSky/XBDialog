@@ -68,7 +68,7 @@ class DemoViewController: UIViewController {
     
     // 手势点击
     @objc public func tapGestureRecognizer() {
-        debugPrint("点击了背景")
+        self.dismiss(animated: true, completion: nil)
     }
     
     
