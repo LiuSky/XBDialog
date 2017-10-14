@@ -25,7 +25,6 @@ public class DialogTransition: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     
-    
     /// 转场时间
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return config.duration
@@ -38,7 +37,6 @@ public class DialogTransition: NSObject, UIViewControllerAnimatedTransitioning {
         let container = transitionContext.containerView
         
         if self.isPresent {
-            
             let toVC = transitionContext.viewController(forKey: .to)!
             let finalFrame = transitionContext.finalFrame(for: toVC)
             toVC.view.frame = finalFrame
