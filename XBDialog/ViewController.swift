@@ -45,7 +45,6 @@ class ViewController: UIViewController {
 
 class DemoViewController: UIViewController {
     
-    
     private let button = UIButton(type: .custom)
     
     override func viewDidLoad() {
