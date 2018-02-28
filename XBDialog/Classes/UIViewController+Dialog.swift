@@ -2,8 +2,8 @@
 //  UIViewController+Dialog.swift
 //  XBDialog
 //
-//  Created by xiaobin liu on 2017/6/7.
-//  Copyright © 2017年 Sky. All rights reserved.
+//  Created by xiaobin liu on 2018/2/28.
+//  Copyright © 2018年 Sky. All rights reserved.
 //
 
 import Foundation
@@ -40,15 +40,15 @@ public struct NamespaceWrapper<T>: TypeWrapperProtocol {
 }
 
 extension UIViewController: NamespaceWrappable {}
-fileprivate var presentKey = "com.mike.Dialog.PresentKey"
+fileprivate var presentKey = "com.mike.Alert.PresentKey"
 public extension TypeWrapperProtocol where WrappedType: UIViewController {
     
-    var present: DialogPresentAnimator {
+    var present: XBPresentAnimator {
         
         if let v = objc_getAssociatedObject(self.wrappedValue, &presentKey) {
-            return v as! DialogPresentAnimator
+            return v as! XBPresentAnimator
         }
-        let m = DialogPresentAnimator(self.wrappedValue)
+        let m = XBPresentAnimator(self.wrappedValue)
         objc_setAssociatedObject(self.wrappedValue, &presentKey, m, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
         return m
     }

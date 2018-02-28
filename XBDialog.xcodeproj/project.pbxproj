@@ -7,19 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336C3F8E20467F3B005E74B5 /* PresentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F8D20467F3B005E74B5 /* PresentConfig.swift */; };
+		336C3F9020467FEE005E74B5 /* BasePresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F8F20467FEE005E74B5 /* BasePresentationController.swift */; };
+		336C3F96204681C3005E74B5 /* DialogConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F91204681C2005E74B5 /* DialogConfig.swift */; };
+		336C3F97204681C3005E74B5 /* DialogPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F92204681C2005E74B5 /* DialogPresentationController.swift */; };
+		336C3F9A204681C3005E74B5 /* DialogTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F95204681C2005E74B5 /* DialogTransition.swift */; };
+		336C3F9C204682CA005E74B5 /* BasePresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F9B204682CA005E74B5 /* BasePresentTransition.swift */; };
+		336C3F9E204684CC005E74B5 /* XBPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F9D204684CC005E74B5 /* XBPresentAnimator.swift */; };
+		336C3FA020468574005E74B5 /* UIViewController+Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3F9F20468574005E74B5 /* UIViewController+Dialog.swift */; };
+		336C3FA42046A634005E74B5 /* MenuConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3FA32046A634005E74B5 /* MenuConfig.swift */; };
+		336C3FA62046A789005E74B5 /* MenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3FA52046A789005E74B5 /* MenuPresentationController.swift */; };
+		336C3FA82046A824005E74B5 /* MenuTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336C3FA72046A824005E74B5 /* MenuTransition.swift */; };
 		33A605731EE7EE400023A3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605721EE7EE400023A3D2 /* AppDelegate.swift */; };
 		33A605751EE7EE400023A3D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605741EE7EE400023A3D2 /* ViewController.swift */; };
 		33A605781EE7EE400023A3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A605761EE7EE400023A3D2 /* Main.storyboard */; };
 		33A6057A1EE7EE400023A3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A605791EE7EE400023A3D2 /* Assets.xcassets */; };
 		33A6057D1EE7EE400023A3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A6057B1EE7EE400023A3D2 /* LaunchScreen.storyboard */; };
-		33A605951EE7F3310023A3D2 /* DialogConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605901EE7F3310023A3D2 /* DialogConfig.swift */; };
-		33A605961EE7F3310023A3D2 /* DialogPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605911EE7F3310023A3D2 /* DialogPresentAnimator.swift */; };
-		33A605971EE7F3310023A3D2 /* DialogPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605921EE7F3310023A3D2 /* DialogPresentationController.swift */; };
-		33A605981EE7F3310023A3D2 /* DialogTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605931EE7F3310023A3D2 /* DialogTransition.swift */; };
-		33A605991EE7F3310023A3D2 /* UIViewController+Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A605941EE7F3310023A3D2 /* UIViewController+Dialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		336C3F8D20467F3B005E74B5 /* PresentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentConfig.swift; sourceTree = "<group>"; };
+		336C3F8F20467FEE005E74B5 /* BasePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentationController.swift; sourceTree = "<group>"; };
+		336C3F91204681C2005E74B5 /* DialogConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogConfig.swift; sourceTree = "<group>"; };
+		336C3F92204681C2005E74B5 /* DialogPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogPresentationController.swift; sourceTree = "<group>"; };
+		336C3F95204681C2005E74B5 /* DialogTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogTransition.swift; sourceTree = "<group>"; };
+		336C3F9B204682CA005E74B5 /* BasePresentTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentTransition.swift; sourceTree = "<group>"; };
+		336C3F9D204684CC005E74B5 /* XBPresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBPresentAnimator.swift; sourceTree = "<group>"; };
+		336C3F9F20468574005E74B5 /* UIViewController+Dialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dialog.swift"; sourceTree = "<group>"; };
+		336C3FA32046A634005E74B5 /* MenuConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuConfig.swift; sourceTree = "<group>"; };
+		336C3FA52046A789005E74B5 /* MenuPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresentationController.swift; sourceTree = "<group>"; };
+		336C3FA72046A824005E74B5 /* MenuTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTransition.swift; sourceTree = "<group>"; };
 		33A6056F1EE7EE400023A3D2 /* XBDialog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XBDialog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A605721EE7EE400023A3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33A605741EE7EE400023A3D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,11 +44,6 @@
 		33A605791EE7EE400023A3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A6057C1EE7EE400023A3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A6057E1EE7EE400023A3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33A605901EE7F3310023A3D2 /* DialogConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogConfig.swift; sourceTree = "<group>"; };
-		33A605911EE7F3310023A3D2 /* DialogPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogPresentAnimator.swift; sourceTree = "<group>"; };
-		33A605921EE7F3310023A3D2 /* DialogPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogPresentationController.swift; sourceTree = "<group>"; };
-		33A605931EE7F3310023A3D2 /* DialogTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogTransition.swift; sourceTree = "<group>"; };
-		33A605941EE7F3310023A3D2 /* UIViewController+Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Dialog.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		336C3F8B20467E64005E74B5 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				336C3F91204681C2005E74B5 /* DialogConfig.swift */,
+				336C3F92204681C2005E74B5 /* DialogPresentationController.swift */,
+				336C3F95204681C2005E74B5 /* DialogTransition.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		336C3FA22046A61F005E74B5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				336C3FA32046A634005E74B5 /* MenuConfig.swift */,
+				336C3FA52046A789005E74B5 /* MenuPresentationController.swift */,
+				336C3FA72046A824005E74B5 /* MenuTransition.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		33A605661EE7EE400023A3D2 = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +110,13 @@
 		33A6058F1EE7F3310023A3D2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				33A605901EE7F3310023A3D2 /* DialogConfig.swift */,
-				33A605911EE7F3310023A3D2 /* DialogPresentAnimator.swift */,
-				33A605921EE7F3310023A3D2 /* DialogPresentationController.swift */,
-				33A605931EE7F3310023A3D2 /* DialogTransition.swift */,
-				33A605941EE7F3310023A3D2 /* UIViewController+Dialog.swift */,
+				336C3F8D20467F3B005E74B5 /* PresentConfig.swift */,
+				336C3F8F20467FEE005E74B5 /* BasePresentationController.swift */,
+				336C3F9B204682CA005E74B5 /* BasePresentTransition.swift */,
+				336C3F9D204684CC005E74B5 /* XBPresentAnimator.swift */,
+				336C3F9F20468574005E74B5 /* UIViewController+Dialog.swift */,
+				336C3FA22046A61F005E74B5 /* Menu */,
+				336C3F8B20467E64005E74B5 /* Dialog */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -161,12 +195,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				33A605751EE7EE400023A3D2 /* ViewController.swift in Sources */,
-				33A605971EE7F3310023A3D2 /* DialogPresentationController.swift in Sources */,
+				336C3F9A204681C3005E74B5 /* DialogTransition.swift in Sources */,
 				33A605731EE7EE400023A3D2 /* AppDelegate.swift in Sources */,
-				33A605961EE7F3310023A3D2 /* DialogPresentAnimator.swift in Sources */,
-				33A605991EE7F3310023A3D2 /* UIViewController+Dialog.swift in Sources */,
-				33A605981EE7F3310023A3D2 /* DialogTransition.swift in Sources */,
-				33A605951EE7F3310023A3D2 /* DialogConfig.swift in Sources */,
+				336C3F96204681C3005E74B5 /* DialogConfig.swift in Sources */,
+				336C3F97204681C3005E74B5 /* DialogPresentationController.swift in Sources */,
+				336C3FA82046A824005E74B5 /* MenuTransition.swift in Sources */,
+				336C3F9C204682CA005E74B5 /* BasePresentTransition.swift in Sources */,
+				336C3F9020467FEE005E74B5 /* BasePresentationController.swift in Sources */,
+				336C3FA020468574005E74B5 /* UIViewController+Dialog.swift in Sources */,
+				336C3FA62046A789005E74B5 /* MenuPresentationController.swift in Sources */,
+				336C3F9E204684CC005E74B5 /* XBPresentAnimator.swift in Sources */,
+				336C3FA42046A634005E74B5 /* MenuConfig.swift in Sources */,
+				336C3F8E20467F3B005E74B5 /* PresentConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
