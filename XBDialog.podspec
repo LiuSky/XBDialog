@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "XBDialog"
-  s.version          = "1.1.0"
+  s.version          = "1.2.0"
   s.summary          = "Custom Dialog"
 
   s.description      = <<-DESC
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'XBDialog/Classes/*.swift'
+  s.source_files = 'XBDialog/Classes/**/*'
 
   s.frameworks = 'Foundation'
   s.frameworks = 'UIKit'
