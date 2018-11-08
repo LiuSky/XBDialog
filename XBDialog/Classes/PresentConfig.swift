@@ -23,7 +23,7 @@ public protocol Config {
     var springVelocity : CGFloat { get set }
     
     /// 动画选项
-    var animationOption: UIViewAnimationOptions { get set }
+    var animationOption: UIView.AnimationOptions { get set }
     
     /// 动画时间
     var duration : TimeInterval { get set }
@@ -32,7 +32,7 @@ public protocol Config {
     var gestureRecognizer: UIGestureRecognizer?  { get set }
     
     /// 毛玻璃背景效果
-    var blurEffectStyle: UIBlurEffectStyle? { get set }
+    var blurEffectStyle: UIBlurEffect.Style? { get set }
 }
 
 /// MARK - PresentConfig

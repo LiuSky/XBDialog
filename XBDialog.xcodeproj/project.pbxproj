@@ -23,9 +23,11 @@
 		33A605781EE7EE400023A3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A605761EE7EE400023A3D2 /* Main.storyboard */; };
 		33A6057A1EE7EE400023A3D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A605791EE7EE400023A3D2 /* Assets.xcassets */; };
 		33A6057D1EE7EE400023A3D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A6057B1EE7EE400023A3D2 /* LaunchScreen.storyboard */; };
+		3CDD49D903CE13AA22E6FD75 /* Pods_XBDialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEDECFF466BB1E7437EF3458 /* Pods_XBDialog.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		335FB2545EE37690513E227E /* Pods-XBDialog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBDialog.release.xcconfig"; path = "Pods/Target Support Files/Pods-XBDialog/Pods-XBDialog.release.xcconfig"; sourceTree = "<group>"; };
 		336C3F8D20467F3B005E74B5 /* PresentConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentConfig.swift; sourceTree = "<group>"; };
 		336C3F8F20467FEE005E74B5 /* BasePresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentationController.swift; sourceTree = "<group>"; };
 		336C3F91204681C2005E74B5 /* DialogConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogConfig.swift; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		33A605791EE7EE400023A3D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A6057C1EE7EE400023A3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A6057E1EE7EE400023A3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D010268CAEF6954233596614 /* Pods-XBDialog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XBDialog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XBDialog/Pods-XBDialog.debug.xcconfig"; sourceTree = "<group>"; };
+		EEDECFF466BB1E7437EF3458 /* Pods_XBDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XBDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,12 +55,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDD49D903CE13AA22E6FD75 /* Pods_XBDialog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		335C2F409E863F48C6C08A19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEDECFF466BB1E7437EF3458 /* Pods_XBDialog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		336C3F8B20467E64005E74B5 /* Dialog */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +95,8 @@
 			children = (
 				33A605711EE7EE400023A3D2 /* XBDialog */,
 				33A605701EE7EE400023A3D2 /* Products */,
+				6EE86CC9810969254919C979 /* Pods */,
+				335C2F409E863F48C6C08A19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +136,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		6EE86CC9810969254919C979 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D010268CAEF6954233596614 /* Pods-XBDialog.debug.xcconfig */,
+				335FB2545EE37690513E227E /* Pods-XBDialog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +152,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33A605811EE7EE400023A3D2 /* Build configuration list for PBXNativeTarget "XBDialog" */;
 			buildPhases = (
+				9547EACD725EB0B82F86E251 /* [CP] Check Pods Manifest.lock */,
 				33A6056B1EE7EE400023A3D2 /* Sources */,
 				33A6056C1EE7EE400023A3D2 /* Frameworks */,
 				33A6056D1EE7EE400023A3D2 /* Resources */,
+				8B4ED38751A1C675868E1193 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,7 +174,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Sky;
 				TargetAttributes = {
 					33A6056E1EE7EE400023A3D2 = {
@@ -188,6 +214,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B4ED38751A1C675868E1193 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XBDialog/Pods-XBDialog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XBDialog/Pods-XBDialog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9547EACD725EB0B82F86E251 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XBDialog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33A6056B1EE7EE400023A3D2 /* Sources */ = {
@@ -246,6 +311,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -253,6 +319,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -304,6 +371,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -311,6 +379,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -343,6 +412,7 @@
 		};
 		33A605821EE7EE400023A3D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D010268CAEF6954233596614 /* Pods-XBDialog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BU9U9E5458;
@@ -351,12 +421,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.XBDialog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		33A605831EE7EE400023A3D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 335FB2545EE37690513E227E /* Pods-XBDialog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BU9U9E5458;
@@ -365,7 +436,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mike.XBDialog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

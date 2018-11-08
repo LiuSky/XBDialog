@@ -13,7 +13,6 @@ import UIKit
 /// MARK - XBPresentAnimator
 public class XBPresentAnimator: NSObject , UIViewControllerTransitioningDelegate {
     
-    
     public typealias T = PresentConfig
     public var config:T?
     

@@ -62,19 +62,17 @@ public class BasePresentationController: UIPresentationController {
         
         self.presentingViewController.transitionCoordinator?.animate(alongsideTransition: { (context) in
             self.presentingViewController.view.transform = CGAffineTransform(scaleX: self.config.presentingScale, y: self.config.presentingScale)
-            self.maskView.alpha = 1.0
         }, completion: nil)
     }
+    
     
     /// 在退出过渡即将开始的时候被调用的,(在这里把遮罩给过渡去掉)
     public override func dismissalTransitionDidEnd(_ completed: Bool) {
         super.dismissalTransitionDidEnd(completed)
         if completed {
-            maskView.isHidden = !config.isShowMask
-            maskView.removeFromSuperview()
-            UIView.animate(withDuration: config.duration, animations: {
+            UIView.animate(withDuration: config.duration) {
                 self.presentingViewController.view.transform = .identity
-            })
+            }
         }
     }
     

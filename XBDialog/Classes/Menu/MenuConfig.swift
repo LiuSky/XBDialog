@@ -42,7 +42,7 @@ public class MenuConfig: PresentConfig  {
     public var damping: CGFloat = 0.0
     
     /// 动画选项
-    public var animationOption: UIViewAnimationOptions = .curveLinear
+    public var animationOption: UIView.AnimationOptions = .curveLinear
     
     /// SpringVelocity则表示初始的速度，数值越大一开始移动越快。在usingSpringWithDamping为1.0f时，initialSpringVelocity分别取5.0f，15.0f和25.0f的情况。值得注意的是，初始速度取值较高而时间较短时，也会出现反弹)
     public var springVelocity: CGFloat = 0.0
@@ -57,7 +57,7 @@ public class MenuConfig: PresentConfig  {
     public var gestureRecognizer: UIGestureRecognizer?
     
     /// 背景毛玻璃效果(如果nil的话,默认一般的)
-    public var blurEffectStyle: UIBlurEffectStyle?
+    public var blurEffectStyle: UIBlurEffect.Style?
     
     /// 是否遮照
     public var isShowMask: Bool = true

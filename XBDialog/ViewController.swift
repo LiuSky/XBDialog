@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SnapKit
 
-@available(iOS 10.0, *)
+
 class ViewController: UIViewController {
 
     private let button = UIButton(type: .custom)
@@ -41,17 +42,27 @@ class DemoViewController: UIViewController {
     
     private let button = UIButton(type: .custom)
 
+    private var de: XBPresentAnimator!
     init() {
         super.init(nibName: nil, bundle: nil)
-        self.xb.present.menu {
-            $0.duration = 0.3
-            $0.isShowMask = true
-            $0.menuType = MenuType.bottomHeightFromViewRate(rate: 0.5)
-            let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapGestureRecognizer))
-            tap.numberOfTapsRequired = 1
-            $0.gestureRecognizer = tap
-        }
-        
+        self.de = XBPresentAnimator(self)
+//        self.de.menu {
+//            $0.duration = 0.3
+//            $0.isShowMask = true
+//            $0.menuType = MenuType.leftWidthFromViewRate(rate: 0.8)
+//            let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapGestureRecognizer))
+//            tap.numberOfTapsRequired = 1
+//            $0.gestureRecognizer = tap
+//        }
+//        self.xb.present.menu {
+//            $0.duration = 0.3
+//            $0.isShowMask = true
+//            $0.menuType = MenuType.leftWidthFromViewRate(rate: 0.8)
+//            let tap = UITapGestureRecognizer(target: self, action: #selector(self.tapGestureRecognizer))
+//            tap.numberOfTapsRequired = 1
+//            $0.gestureRecognizer = tap
+//        }
+//
         
 //        self.xb.present.dialog {
 //            $0.duration = 0.3
@@ -70,26 +81,16 @@ class DemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.view.backgroundColor = .red
-//        self.view.layer.masksToBounds = true
-//        self.view.layer.cornerRadius  = 4
-        
-        self.button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
         self.button.backgroundColor = UIColor.blue
         self.button.setTitle("隐藏", for: .normal)
         self.button.addTarget(self, action: #selector(DemoViewController.dis), for: .touchUpInside)
         self.view.addSubview(self.button)
-    }
-    
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        debugPrint("页面将要显示")
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        debugPrint("页面将要离开")
+        
+        self.button.snp.makeConstraints { (make) in
+            make.center.equalTo(self.view)
+            make.size.equalTo(CGSize(width: 100, height: 100))
+        }
     }
     
     @objc public func dis() {
@@ -103,12 +104,16 @@ class DemoViewController: UIViewController {
     }
     
     
-    // 大小自定义(这边自定义不影响上面用autolayout来布局)
-    override var preferredContentSize: CGSize {
-        get {
-            return CGSize(width: 300, height: 500)
-        }
-        set { super.preferredContentSize = newValue }
+//    // 大小自定义(这边自定义不影响上面用autolayout来布局)
+//    override var preferredContentSize: CGSize {
+//        get {
+//            return CGSize(width: 300, height: 500)
+//        }
+//        set { super.preferredContentSize = newValue }
+//    }
+    
+    deinit {
+        debugPrint("页面释放")
     }
     
     override func didReceiveMemoryWarning() {

@@ -40,6 +40,7 @@ public struct NamespaceWrapper<T>: TypeWrapperProtocol {
 }
 
 extension UIViewController: NamespaceWrappable {}
+
 fileprivate var presentKey = "com.mike.Alert.PresentKey"
 public extension TypeWrapperProtocol where WrappedType: UIViewController {
     
