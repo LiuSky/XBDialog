@@ -64,15 +64,14 @@ public class MenuTransition: BasePresentTransition, UIViewControllerAnimatedTran
             UIView.animate(withDuration: 0.3, delay: 0, options: UIView.AnimationOptions(rawValue: 7 << 16 | UIView.AnimationOptions.allowAnimatedContent.rawValue), animations: {
                 toVC.view.transform = .identity
                 presentationController?.maskView.alpha = 1.0
-            }, completion: { (finish) in
+            }) { (finish) in
                 context.completeTransition(!context.transitionWasCancelled)
-            })
-            
+            }
         } else {
             
             let fromVC = context.viewController(forKey: .from)!
             let presentationController = fromVC.presentationController as? MenuPresentationController
-            UIView.animate(withDuration: 0.3, delay: 0.0, options: (UIView.AnimationOptions(rawValue: UIView.AnimationOptions.RawValue(7 << 16))), animations: {
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: UIView.AnimationOptions(rawValue: UIView.AnimationOptions.RawValue(7 << 16)), animations: {
                 fromVC.view.transform = CGAffineTransform(translationX: 0, y: height)
                 presentationController?.maskView.alpha = 0.0
             }) { (finish) in

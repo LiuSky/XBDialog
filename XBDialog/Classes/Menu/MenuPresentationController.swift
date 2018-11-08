@@ -111,7 +111,7 @@ public class MenuPresentationController: BasePresentationController {
     
     fileprivate func calculatePercent (offset:CGPoint , config:MenuConfig) -> CGFloat {
         
-        var percent:CGFloat = 0.001
+        var percent: CGFloat = 0.001
         
         if let view = presentedViewController.view {
             switch config.menuType {

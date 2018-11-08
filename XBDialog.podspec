@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "XBDialog"
-  s.version          = "1.3.0"
+  s.version          = "1.5.0"
   s.summary          = "Custom Dialog"
 
   s.description      = <<-DESC
