@@ -57,7 +57,7 @@ public class MenuTransition: BasePresentTransition, UIViewControllerAnimatedTran
             
             ///在使用 Telegram 的过程中，我早就发现它使用起来是非常流畅，而且自带的分享界面和系统原生的分享的呈现动画几乎一模一样。今天我花了几分钟找到了答案，原来 Telegram 使用了一个魔法数字
             /// 它的核心代码是在 UIView.animate 的 options 里，传入了这个魔法选项：
-            /// UIViewAnimationOptions(rawValue: 7 << 16 | UIViewAnimationOptions.allowAnimatedContent.rawValue)
+            /// UIView.AnimationOptions(rawValue: 7 << 16 | UIView.AnimationOptions.allowAnimatedContent.rawValue)
             /// 源码参考来自 Telegram 项目：https://github.com/peter-iakovlev/Telegram/blob/public/Share/TGShareController.m#L662
             /// 可能是反向工程系统的库查看到
             let presentationController = toVC.presentationController as? MenuPresentationController
