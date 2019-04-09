@@ -28,6 +28,10 @@ class ViewController: UIViewController {
         let vc = DemoViewController()
         self.present(vc, animated: true, completion: nil)
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -81,6 +85,7 @@ class DemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
         self.view.backgroundColor = .red
         self.button.backgroundColor = UIColor.blue
         self.button.setTitle("隐藏", for: .normal)
@@ -93,6 +98,14 @@ class DemoViewController: UIViewController {
         }
     }
     
+    override var shouldAutorotate: Bool {
+        return true
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscapeLeft
+    }
+    
     @objc public func dis() {
         
         self.dismiss(animated: true, completion: nil)
@@ -103,6 +116,17 @@ class DemoViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+//    override var shouldAutorotate: Bool {
+//        return true
+//    }
+//
+//    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+//        return .landscapeRight
+//    }
+//
+//    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+//        return UIInterfaceOrientation.landscapeLeft
+//    }
     
 //    // 大小自定义(这边自定义不影响上面用autolayout来布局)
 //    override var preferredContentSize: CGSize {
@@ -113,6 +137,7 @@ class DemoViewController: UIViewController {
 //    }
     
     deinit {
+//    UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
         debugPrint("页面释放")
     }
     
